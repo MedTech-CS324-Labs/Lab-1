@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Travel Agency Signup</title>
+  </head>
+  <body>
+    <h1>Join Our Travel Agency</h1>
+    <p>Please fill in the form below to create your account.</p>
+
+    <form onsubmit="alert('Form submitted!');">
+      <label for="username">Username:*</label><br />
+      <input type="text" name="username" required /><br /><br />
+
+      <label for="password">Password:*</label><br />
+      <input type="password" name="password" required /><br /><br />
+
+      <label for="email">Email:*</label><br />
+      <input type="email" name="email" required /><br /><br />
+
+      <label for="dob">Date of Birth:*</label><br />
+      <input type="date" name="dob" required /><br /><br />
+
+      <p>Preferred Travel Class:</p>
+      <input name="travel-class" type="radio" value="1" />
+      <label for="economy">Economy</label><br />
+      <input name="travel-class" type="radio" value="2" />
+      <label for="business">Business</label><br />
+      <input name="travel-class-a" type="radio" value="3" />
+      <label for="first">First Class</label><br /><br />
+
+      <p>Interests:</p>
+      <input type="checkbox" name="interest" value="beaches" />
+      <label for="beaches">Beaches</label><br />
+      <input type="checkbox" name="interest" value="adventure" />
+      <label for="adventure">Adventure</label><br />
+      <input type="checkbox" name="interest" value="history" />
+      <label for="history">History</label><br /><br />
+
+      <label for="photo">Upload Profile Photo:</label><br />
+      <input type="file" name="photo" /><br /><br />
+
+      <label for="color">Favorite Color:</label><br />
+      <input type="color" name="color" /><br /><br />
+
+      <label for="budget">Monthly Travel Budget (0–5000):</label><br />
+      <input type="range" name="budget" min="0" max="5000" /><br /><br />
+
+      <label for="about">Tell us about yourself:</label><br />
+      <textarea name="about"></textarea><br /><br />
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </body>
+</html>
